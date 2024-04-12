@@ -3,7 +3,6 @@ package com.joy.compras.controller;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +18,6 @@ import com.joy.compras.service.UnidadMedidaService;
 @RequestMapping(path = "api/v1/unidadmedida")
 public class UnidadMedidaController {
 
-    @Autowired
     private UnidadMedidaService service;
 
     @GetMapping
