@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import com.joy.compras.service.ArticuloService;
 @RequestMapping(path = "api/v1/articulos")
 public class ArticuloController {
 
+    @Autowired
     private ArticuloService service;
 
     @GetMapping
